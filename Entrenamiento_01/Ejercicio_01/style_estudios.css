@@ -13,6 +13,7 @@ body {
 
 .contenido-carrera {
   width: 80%;
+  min-height: 100vh;
   margin: 0 auto;
   border: 0.06rem solid #000000;
   padding: 2rem;

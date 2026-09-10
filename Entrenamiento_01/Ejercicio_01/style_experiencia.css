@@ -1,9 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
+}
+
+.contenido-experiencia {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 0.06rem solid #000000;
+  padding: 2rem;
+  background-color: #d8d8d8;
+}
+
+.experiencia-encabezado {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;            
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.fecha-experiencia {
+  font-size: 1rem;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+.descripcion-experiencia {
+  font-size: 1rem;
+  color: #383838;
+}
+
+.datos-experiencia {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #3f2c3d;
+}
+
+ul {
+  margin-left: 2rem;
+  line-height: 1.5;
+}
+
+ul ul {
+  margin-left: 1.5rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
 }
 
 footer {
@@ -13,9 +76,14 @@ footer {
   padding: 1rem;
   width: 80%;
   border: 0.06rem solid #000000;
-  margin: 1rem auto 0 auto;
+  margin: 1.5rem auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem; 
+  gap: 0.8rem;
+}
+
+iframe {
+  display: block;      
+  margin-top: 1.5rem;  
 }
