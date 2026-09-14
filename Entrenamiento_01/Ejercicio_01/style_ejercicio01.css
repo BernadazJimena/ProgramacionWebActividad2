@@ -47,18 +47,6 @@ footer {
   line-height: 1.6;
 }
 
-.foto-perfil {
-  width: 30%;
-  height: 12rem;
-  background-color: #cccccc;
-  border: 0.06rem solid #333333;
-  border-radius: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
 h2 {
   font-size: 1.4rem;
   margin-top: 1.5rem;
