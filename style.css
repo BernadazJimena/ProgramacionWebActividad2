@@ -24,7 +24,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    border: 0.06rem solid #000000;
+    border: 0.06rem solid #000;
     border-radius: 1rem;
     gap: 1rem;
 }
