@@ -23,7 +23,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem; 
+  gap: 0.8rem;
 }
 
 .contenido-cv {
@@ -61,6 +61,14 @@ ul {
 
 ul ul {
   margin-left: 1.5rem;
+}
+
+.img {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 0.7rem;
+  border: 1px solid #000;
+  float: right;
 }
 
 a {
