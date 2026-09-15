@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 0.05rem solid #000000;
+}
+
+.verde { background-color: #d8e6d3; }
+.amarillo { background-color: #fef0cd; }
+.rosa { background-color: #f6cece; }
+.azul { background-color: #cbdcf7; }
+
+/* MODELO 01 */
+.m1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 0.3fr 2fr 1.5fr 1.5fr;
+    grid-template-areas:
+        "box1 box1"
+        "gap gap"
+        "box2 box2"
+        "box3 box4"
+        "box5 box6";
+}
+
+@media (min-width: 64rem) {
+    .m1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2.5fr 1fr;
+        grid-template-areas:
+            "box1 box1 box2 box2"
+            "box3 box4 box5 box6";
+    }
+}
+
+/* MODELO 02 */
+.m2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1fr 1fr;
+    grid-template-areas:
+        "box6 box6"
+        "box5 box5"
+        "box3 box4"
+        "box2 box2"
+        "box1 box1";
+}
+
+@media (min-width: 64rem) {
+    .m2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6";
+    }
+}
+
+/* MODELO 03 */
+.m3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "box1"
+        "box3"
+        "box6";
+}
+
+.m3 .oculto-mobile {
+    display: none;
+}
+
+@media (min-width: 64rem) {
+    .m3 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6";
+    }
+    
+    .m3 .oculto-mobile {
+        display: flex;
+    }
+}
+
+/* MODELO 04 */
+/* Mobile */
+.m4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+}
+
+/* Tablet */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+    .m4 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6";
+    }
+}
+
+/* Escritorio*/
+@media (min-width: 64rem) {
+    .m4 {
+        grid-template-columns: 1.5fr 2fr 1.5fr;
+        grid-template-rows: 1fr 1fr 1.2fr;
+        grid-template-areas:
+            "box1 box2 box4"
+            "box1 box3 box4"
+            "box5 box5 box6";
+    }
+}
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.gap-m1 { grid-area: gap; background-color: #e5e5e5; }
