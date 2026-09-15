@@ -106,7 +106,7 @@ html, body {
 }
 
 /* MODELO 04 */
-/* Mobile */
+/* 1. Vista Mobile  */
 .m4 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -119,7 +119,14 @@ html, body {
         "box6";
 }
 
-/* Tablet */
+/* Colores para Mobile */
+.m4 .box1, .m4 .box2 { background-color: #d8e6d3; } 
+.m4 .box3, .m4 .box4 { background-color: #fef0cd; } 
+.m4 .box5 { background-color: #cbdcf7; }            
+.m4 .box6 { background-color: #f6cece; }            
+
+
+/* 2. Vista Tablet */
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
     .m4 {
         grid-template-columns: 2fr 1fr;
@@ -129,9 +136,16 @@ html, body {
             "box3 box4"
             "box5 box6";
     }
+
+    /* Colores para Tablet */
+    .m4 .box1, .m4 .box2 { background-color: #d8e6d3; } 
+    .m4 .box3, .m4 .box4 { background-color: #fef0cd; } 
+    .m4 .box5 { background-color: #f6cece; }          
+    .m4 .box6 { background-color: #cbdcf7; } 
 }
 
-/* Escritorio*/
+
+/* 3. Vista Escritorio */
 @media (min-width: 64rem) {
     .m4 {
         grid-template-columns: 1.5fr 2fr 1.5fr;
@@ -141,6 +155,12 @@ html, body {
             "box1 box3 box4"
             "box5 box5 box6";
     }
+
+    /* Colores para Escritorio */
+    .m4 .box1, .m4 .box4 { background-color: #d8e6d3; } 
+    .m4 .box2, .m4 .box3 { background-color: #fef0cd; } 
+    .m4 .box5 { background-color: #f6cece; }            
+    .m4 .box6 { background-color: #cbdcf7; }          
 }
 
 .box1 { grid-area: box1; }
